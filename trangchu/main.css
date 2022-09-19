@@ -81,6 +81,7 @@ main{
 }
 .gearteam-header-content{
     display: flex;
+    margin-top: 20px;
 }
 .gearteam-header-navigation{
     flex: 1;
