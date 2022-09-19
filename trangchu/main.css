@@ -1,0 +1,106 @@
+body{
+    background-color: blueviolet;
+}
+/* header */
+/* logo */
+main{
+    margin: 0 10%;
+}
+.header-menu{
+    display: flex;
+    height: 12%;
+    align-items: center;
+    /* margin: 0 10%; */
+}
+.img-logo{
+    height: 100%;
+}
+#search-menu{
+    width: 55%;
+    margin: 0 2%;
+    padding: 0 10px;
+    padding-right: 0;
+    background-color: white;
+    border-radius: 20px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.search-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-form input{
+    width: 95%;
+    height: 120%;
+    border: none;
+    outline: none;
+    font-size: 15;
+}
+.search-form button{
+    background-color: red;
+    width: 6%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navbar-menu{
+    flex: 1;
+}
+.link-nav-list{
+    color: white;
+}
+.nav-item{
+    
+}
+.head-link{
+    margin-top: 1%;
+}
+.head-link__item{
+   margin-right: 2%;
+   padding: 0.5% 2%;
+   background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+.head-link__item button{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+}
+.gearteam-header-content{
+    display: flex;
+}
+.gearteam-header-navigation{
+    flex: 1;
+}
+/* .name-list-product{
+    margin-top: 10px;
+    width: 15%;
+    padding: 10px;
+    background-color: red;
+    
+    border-radius: 5px;
+    text-align: center;
+    
+} */
+/* .list-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-menu-product{
+    background-color: white;
+    width: 16%;
+} */
