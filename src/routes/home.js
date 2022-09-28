@@ -1,10 +1,10 @@
 const express = require('express');
 const route = express.Router();
 
-const newsController = require('../app/controllers/NewsController');
+const homeController = require('../app/controllers/HomeController');
 
 // newsController.index
 
-route.get('/', newsController.index);
+route.get('/', homeController.index);
 
 module.exports = route;

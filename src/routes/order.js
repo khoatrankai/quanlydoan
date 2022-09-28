@@ -1,10 +1,9 @@
 const express = require('express');
 const route = express.Router();
 
-const newsController = require('../app/controllers/NewsController');
+const orderController = require('../app/controllers/OrderController');
 
 // newsController.index
-
-route.get('/', newsController.index);
+route.get('/:name', orderController.index);
 
 module.exports = route;

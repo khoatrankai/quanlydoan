@@ -1,1 +1,7 @@
-<h1>order đồ</h1>
+{{#each course}}<h1>
+        {{this.name}}
+    
+    </h1>
+    <img src="{{this.img}}" alt="">
+    <h2>{{this.price}}</h2>
+    {{/each}}

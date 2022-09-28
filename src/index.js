@@ -5,6 +5,11 @@ const morgan = require('morgan')
 const route = require('./routes')
 const app = express()
 const port = 3000
+const db = require('./config/db')
+
+db.connect();
+
+
 
 app.use(morgan('combined'))
 app.use(express.urlencoded({

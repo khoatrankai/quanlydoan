@@ -1,69 +1,4 @@
 
-    <body-main>
-        <header>
-            <div class="header-menu">
-                <div class="logo-main">
-                    <img src="/img/logo3.png" alt="" class="img-logo">
-                </div>
-                
-                <div id="search-menu">
-                    <form action="" class="search-form">
-                        <input type="text" placeholder="tìm kiếm">
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="navbar-menu">
-                    <ul class="navbar-list">
-                        <li class="nav-item">
-                            <a href="" class="link-nav-list">
-                                <i class="fa-solid fa-bell"></i><span>Thông báo</span> 
-                            </a>                    
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="link-nav-list">
-                                <i class="fa-solid fa-earth-americas"></i>
-                            <span>Ngôn ngữ</span> 
-                        </a> </li>
-                        <li class="nav-item"><a href="" class="link-nav-list">
-                            <span>Tài khoản</span> 
-                        </a> </li>
-                        <li class="nav-item"><a href="" class="link-nav-list">
-                            <i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span> 
-                            </a> </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="head-link">
-                <ul class="head-link__list row">
-                    <li class="head-link__item col-4">
-                        <button>
-                            <i class="fa-solid fa-money-check-dollar"></i>
-                            HƯỚNG DẪN THANH TOÁN
-                        </button>
-                    </li>
-                    <li class="head-link__item col-4">
-                        <button>
-                            <i class="fa-solid fa-money-check-dollar-pen"></i>
-                            HƯỚNG DẪN TRẢ GÓP
-                        </button>
-                    </li>
-                    <li class="head-link__item col-4">
-                        <button>
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
-                            CHÍNH SÁCH BẢO HÀNH
-                        </button>
-                    </li>
-                    <li class="head-link__item col-4">
-                        <button>
-                            <i class="fa-solid fa-car"></i>
-                            CHÍNH SÁCH VẬN CHUYỂN
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </header>
         <main>
 
 
@@ -504,7 +439,20 @@
                         <li class="item-content">
                             <h2>PC GEARTEAM - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
                             <ul class="row item-product">
-                                <li class="col-5-1">
+                                {{#each courses}}
+                                <a href="http://localhost:3000/courses/{{this.name}}" class="col-5-1">
+
+                                    <li>
+                                        <img src="{{this.img}}" alt="">
+                                    <div class="item-price">
+
+                                        <h4>{{this.name}}</h4>
+                                        <h3>{{this.price}}đ</h3>
+                                    </div>
+                                    </li>
+                                </a>
+                                {{/each}}
+                                {{!-- <li class="col-5-1">
                                     <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
                                     <div class="item-price">
 
@@ -543,7 +491,7 @@
                                         <h4>GTN Viper</h4>
                                         <h3>2,452,369đ</h3>
                                     </div>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         <li class="item-content">
@@ -598,4 +546,3 @@
             
             <footer></footer>
         </main>
-    </body-main>

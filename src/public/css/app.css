@@ -146,7 +146,7 @@
   width: 100%;
   padding-left: 20px; }
 
-.item-product li + li {
+.item-product a + a {
   margin-left: 1%; }
 
 .item-product li {
