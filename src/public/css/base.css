@@ -27,9 +27,11 @@ main {
 body-main {
   position: relative; }
 
+footer {
+  background-color: white; }
+
 .row {
-  display: flex;
-  flex-wrap: wrap; }
+  display: flex; }
 
 .col-5 {
   width: 20%; }

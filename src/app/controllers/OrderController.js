@@ -6,7 +6,7 @@ class OrderController{
     index(req,res,next){
         if(req.params.name != "")
         {
-           Courses.findOne({name: req.params.name})
+           Courses.courses1.findOne({name: req.params.name})
         .then(course => {
             res.render('order',{course})
         })

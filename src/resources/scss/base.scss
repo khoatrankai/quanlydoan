@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: blueviolet;
+    background-color: blueviolet
 }
 /* header */
 /* logo */
@@ -27,9 +27,12 @@ main {
 body-main {
     position: relative;
 }
+footer{
+    background-color: white;
+}
 .row {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 .col-5 {
     width: 20%;

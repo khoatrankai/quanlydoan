@@ -4,11 +4,6 @@
 
             <div class="gearteam-header-content">
                 <div class="name-list-product">
-                    <div class="list-product">
-
-                        <i class="fa-solid fa-bars"></i>
-                        <span class="text-list">Danh sách mặt hàng</span>
-                    </div>
                     <div class="navbar-menu-product">
                         <ul class="list-index-product">
                             <li class="item-index">
@@ -431,6 +426,7 @@
                             </a>
                         </div>
                     </div>
+                   
                 </div>
             </div>
             <div class="gearteam-body-content">
@@ -439,7 +435,7 @@
                         <li class="item-content">
                             <h2>PC GEARTEAM - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
                             <ul class="row item-product">
-                                {{#each courses}}
+                                {{#each courses1}}
                                 <a href="http://localhost:3000/courses/{{this.name}}" class="col-5-1">
 
                                     <li>
@@ -451,6 +447,7 @@
                                     </div>
                                     </li>
                                 </a>
+                
                                 {{/each}}
                                 {{!-- <li class="col-5-1">
                                     <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
@@ -497,46 +494,19 @@
                         <li class="item-content">
                             <h2>PC GEARTEAM - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
                             <ul class="row item-product">
-                                <li class="col-5-1">
-                                    <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
+                                {{#each courses2}}
+                                <a href="http://localhost:3000/courses/{{this.name}}" class="col-5-1">
+                                    <li>
+                                        <img src="{{this.img}}" alt="">
                                     <div class="item-price">
 
-                                        <h4>GTN Viper</h4>
-                                        <h3>2,452,369đ</h3>
+                                        <h4>{{this.name}}</h4>
+                                        <h3>{{this.price}}đ</h3>
                                     </div>
-                                </li>
-                                <li class="col-5-1">
-                                    <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
-                                    <div class="item-price">
-
-                                        <h4>GTN Viper</h4>
-                                        <h3>2,452,369đ</h3>
-                                    </div>
-                                </li>
-                                <li class="col-5-1">
-                                    <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
-                                    <div class="item-price">
-
-                                        <h4>GTN Viper</h4>
-                                        <h3>2,452,369đ</h3>
-                                    </div>
-                                </li>
-                                <li class="col-5-1">
-                                    <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
-                                    <div class="item-price">
-
-                                        <h4>GTN Viper</h4>
-                                        <h3>2,452,369đ</h3>
-                                    </div>
-                                </li>
-                                <li class="col-5-1">
-                                    <img src="https://product.hstatic.net/1000026716/product/1_de3a14a8969c433fbe31ed9ddee5997f_large.jpg" alt="">
-                                    <div class="item-price">
-
-                                        <h4>GTN Viper</h4>
-                                        <h3>2,452,369đ</h3>
-                                    </div>
-                                </li>
+                                    </li>
+                                </a>
+                  
+                                {{/each}}
                             </ul>
                         </li>
                     </ul>

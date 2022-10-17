@@ -8,7 +8,12 @@ class CreateController{
             res.render('./courses/create')
     }
     store(req,res,next){
-        res.json(req.body)
+        const course = new Courses(req.body)
+        course.save()
+        .then(()=> res.redirect('/'))
+        .catch(err => {
+            
+        })
     }
     search(req,res){
         res.render('search')
