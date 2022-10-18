@@ -420,10 +420,22 @@
                 </div>
                 <div class="gearteam-header-navigation">
                     <div class="carousel-inner">
-                        <div class="item-header-nav">
-                            <a href="">
-                                <img src="//theme.hstatic.net/1000026716/1000440777/14/slideshow_1.jpg?v=28822" alt="">
-                            </a>
+                         <div class="slider owl-carousel owl-theme">
+                            <div class="item-nav">
+                                <a href="">
+                                    <img src="//theme.hstatic.net/1000026716/1000440777/14/slideshow_1.jpg?v=28822" alt="">
+                                </a>
+                            </div>
+                            <div class="item-nav">
+                                <a href="">
+                                    <img src="//theme.hstatic.net/1000026716/1000440777/14/slideshow_1.jpg?v=29526" alt="">
+                                </a>
+                            </div>
+                            <div class="item-nav">
+                                <a href="">
+                                    <img src="//theme.hstatic.net/1000026716/1000440777/14/slideshow_6.jpg?v=29526" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                    
@@ -434,19 +446,21 @@
                     <ul class="list-content">
                         <li class="item-content">
                             <h2>PC GEARTEAM - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
-                            <ul class="row item-product">
+                            <ul class="row item-product ">
                                 {{#each courses1}}
-                                <a href="http://localhost:3000/courses/{{this.name}}" class="col-5-1">
+                                    
 
-                                    <li>
-                                        <img src="{{this.img}}" alt="">
-                                    <div class="item-price">
+                                        <li class="col-5-1">
+                                            <a href="http://localhost:3000/courses/{{this.name}}" >
+                                            <img src="{{this.img}}" alt="">
+                                            <div class="item-price">
 
-                                        <h4>{{this.name}}</h4>
-                                        <h3>{{this.price}}đ</h3>
-                                    </div>
-                                    </li>
-                                </a>
+                                                <h4>{{this.name}}</h4>
+                                                <h3>{{this.price}}đ</h3>
+                                            </div>
+                                            </a>
+                                        </li>
+                                    
                 
                                 {{/each}}
                                 {{!-- <li class="col-5-1">
@@ -495,16 +509,16 @@
                             <h2>PC GEARTEAM - MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</h2>
                             <ul class="row item-product">
                                 {{#each courses2}}
-                                <a href="http://localhost:3000/courses/{{this.name}}" class="col-5-1">
-                                    <li>
-                                        <img src="{{this.img}}" alt="">
-                                    <div class="item-price">
+                                <li class="col-5-1">
+                                            <a href="http://localhost:3000/courses/{{this.name}}" >
+                                            <img src="{{this.img}}" alt="">
+                                            <div class="item-price">
 
-                                        <h4>{{this.name}}</h4>
-                                        <h3>{{this.price}}đ</h3>
-                                    </div>
-                                    </li>
-                                </a>
+                                                <h4>{{this.name}}</h4>
+                                                <h3>{{this.price}}đ</h3>
+                                            </div>
+                                            </a>
+                                        </li>
                   
                                 {{/each}}
                             </ul>
