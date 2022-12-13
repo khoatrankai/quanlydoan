@@ -12,7 +12,7 @@ function route(app) {
     //     res.render('home');
     // });
     app.use('/', homeRouter);
-    app.use('/courses', orderRouter);
+    app.use('/', orderRouter);
     app.use('/create', createRouter);
     app.use('/me', meRouter);
     app.use('/me/courses', editRouter);

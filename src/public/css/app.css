@@ -121,8 +121,7 @@
 
 .name-list-product {
   width: 18%;
-  margin-right: 4%;
-  text-align: center; }
+  margin-right: 4%; }
 
 .list-index-product {
   padding: 0; }
@@ -235,3 +234,25 @@
 
 .item-price {
   padding: 5px 10px; }
+
+.header-order {
+  display: flex; }
+
+.order {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1%; }
+
+.h-order-title {
+  margin-left: 35px; }
+
+.order-title-name {
+  margin-bottom: 337px; }
+
+.btn-order {
+  border: none;
+  padding: 10px 25px;
+  margin-right: 35px; }
+
+.body-order {
+  margin-top: 5%; }

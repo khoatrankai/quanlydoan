@@ -1,19 +1,29 @@
-
 const Courses = require('../model/courses')
+Courses.courses1.findOne({_id: '6332713cd720dcdba9f2c860'})
+            .then(course => {
+                console.log(course);
+               
+            })
+            .catch(err => err)
+
+    console.log(Courses.courses1[0]+"ok");
+
 
 
 class OrderController{
     index(req,res,next){
-        if(req.params.name != "")
-        {
-           Courses.courses1.findOne({name: req.params.name})
-        .then(course => {
-            res.render('order',{course})
-        })
-        .catch(next)
-        }else{
-                
-        }
+            
+        
+           Courses.courses1.findOne({_id: req.params.id})
+            .then(course => {
+                console.log(course);
+                res.render('order',{name: course.name,price: course.price, img: course.img})
+            })
+            .catch(next)
+
+
+            
+       
         
         
     }
@@ -22,4 +32,3 @@ class OrderController{
 
 
 module.exports = new OrderController()
-
